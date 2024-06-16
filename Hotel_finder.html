@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Finder</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="Hotel_finder.css">
+</head>
+<body>
+    <h1><strong><center>Hotel Finder</center></strong></h1>
+
+    <div class="container">
+        <label for="city-name">Enter city:</label>
+        <input type="text" id="city-name" placeholder="Enter city name...">
+        <button onclick="searchHotels()">Search</button>
+
+        <div id="hotelList"></div>
+
+        <button onclick="showFavoriteHotels()">Show Favorite Hotels</button>
+        <h2 id="favhotel" style="display:none"> Favorite Hotels </h2>
+        <div id="favoriteHotels"></div>
+    </div>
+</body>
+<script src="Hotel_finder.js"></script>
+</html>
