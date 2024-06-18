@@ -1,69 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Weather Prediction Project </title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator - By Code Traversal</title>
   </head>
   <body>
-    <h1>Weather Dashboard</h1>
     <div class="container">
-      <div class="weather-input">
-        <h3>Enter a City Name</h3>
-        <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
-        <button class="search-btn">Search</button>
-        <div class="separator"></div>
-        <button class="location-btn">Use Current Location</button>
-      </div>
-      <div class="weather-data">
-        <div class="current-weather">
-          <div class="details">
-            <h2>_______ ( ______ )</h2>
-            <h6>Temperature: __°C</h6>
-            <h6>Wind: __ M/S</h6>
-            <h6>Humidity: __%</h6>
-          </div>
+      <div class="calculator">
+        <input type="text" id="inputBox" placeholder="0" />
+        <div>
+          <button class="button operator">AC</button>
+          <button class="button operator">DEL</button>
+          <button class="button operator">%</button>
+          <button class="button operator">/</button>
         </div>
-        <div class="days-forecast">
-          <h2>5-Day Forecast</h2>
-          <ul class="weather-cards">
-            <li class="card">
-              <h3>( ______ )</h3>
-              <h6>Temp: __C</h6>
-              <h6>Wind: __ M/S</h6>
-              <h6>Humidity: __%</h6>
-            </li>
-            <li class="card">
-              <h3>( ______ )</h3>
-              <h6>Temp: __C</h6>
-              <h6>Wind: __ M/S</h6>
-              <h6>Humidity: __%</h6>
-            </li>
-            <li class="card">
-              <h3>( ______ )</h3>
-              <h6>Temp: __C</h6>
-              <h6>Wind: __ M/S</h6>
-              <h6>Humidity: __%</h6>
-            </li>
-            <li class="card">
-              <h3>( ______ )</h3>
-              <h6>Temp: __C</h6>
-              <h6>Wind: __ M/S</h6>
-              <h6>Humidity: __%</h6>
-            </li>
-            <li class="card">
-              <h3>( ______ )</h3>
-              <h6>Temp: __C</h6>
-              <h6>Wind: __ M/S</h6>
-              <h6>Humidity: __%</h6>
-            </li>
-          </ul>
+        <div>
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button operator">*</button>
+        </div>
+        <div>
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button operator">-</button>
+        </div>
+        <div>
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button operator">+</button>
+        </div>
+
+        <div>
+          <button class="button">00</button>
+          <button class="button">0</button>
+          <button class="button">.</button>
+          <button class="button equalBtn">=</button>
         </div>
       </div>
     </div>
-    
+
+    <script src="script.js"></script>
   </body>
 </html>
